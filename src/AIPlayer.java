@@ -4,9 +4,8 @@ import java.util.List;
 import com.sun.xml.internal.ws.api.pipe.NextAction;
 
 
-public class AIPlayer {
-	
-public static String[][] s = new String[11][11];
+public class AIPlayer extends AIHW4 {
+//public static String[][] s = new String[11][11];
  
  //player may be computer(29) or opponent(21)
  public int[] minimax(int depth,int player){
@@ -37,7 +36,7 @@ public static String[][] s = new String[11][11];
  
 			 if(player == 29){
  
-			currentScore =minimax(depth-1, 21)[0]; //Dont know about this [0]
+			currentScore =minimax(depth-1, 21)[0]; 
 		
 			if(currentScore >bestScore){
  
@@ -46,7 +45,7 @@ public static String[][] s = new String[11][11];
 				bestCol = moves[1];
 			}
 			} else {
-				currentScore =minimax(depth-1, 29)[0]; //Dont know about this [0]
+				currentScore =minimax(depth-1, 29)[0]; 
 				if(currentScore <bestScore){
 					bestScore = currentScore;
 					bestRow = moves[0];
