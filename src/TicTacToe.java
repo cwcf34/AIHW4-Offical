@@ -8,7 +8,7 @@
  */
 public class TicTacToe 
 {
-	 private char[][] board; 
+	 public static char[][] board; 
 	    private char currentPlayerMark;
 				
 	    public TicTacToe() {
