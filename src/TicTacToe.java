@@ -16,6 +16,10 @@ public class TicTacToe
 	        currentPlayerMark = 'x';
 	        initializeBoard();
 	    }
+	    
+	    public char[][] getBoard() {
+	    	return board;
+	    }
 		
 		
 	    // Set/Reset the board back to all empty values.
